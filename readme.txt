@@ -13,7 +13,7 @@ algorithm with a three-dimensional array that use recursive but everytime i find
 i save it in the array so when I will need it again I will not calculate it again but 
 I will take it directly from the array . gcc -o example main.c flowarmem.c and run it 
 like this ./example < demo.txt or with the other demo files
-    3.    In the third algorithm I use an iterative method to find the shortest path and i calculate 
+    3.    In the third algorithm I use an iterative method to find the shortest path and i find 
 also the path that i through to reach the final point. The path is printing if i write in 
 the start of file #define PATH else the algorithm print only the best distance. 
 gcc -o example main.c flowardp.c and run it like this ./example < demo.txt or with the other demo files
