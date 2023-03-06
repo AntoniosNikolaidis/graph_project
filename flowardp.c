@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "flowardp.h"
-#define PATH					//if i define PATH then the algorith show us the path that through
+#define PATH					//if i use the coommand define PATH then the algorith show us the path that through
 
 void solve(int n,int **graph){
         int k,i,j,**q,**next,u,v;                               
