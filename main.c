@@ -4,7 +4,7 @@
 
 int main(){
 	int n,i,j,**graph;				
-	scanf("%d",&n);					//i take from the file the size of matrix 
+	scanf("%d",&n);					//i am taking from the file the size of array.
 	graph=malloc(n*sizeof(int *));			
 	if (graph==NULL)				
 		return-1;
@@ -16,10 +16,10 @@ int main(){
 	for(i=0;i<=n-1;i++)
 		for(j=0;j<=n-1;j++)
 			if (i>j)			
-				scanf("%d",&graph[i][j]); //i take all the data from input file
+				scanf("%d",&graph[i][j]);         //i am taking all the data from input file
 	for (i=0;i<=n-1;i++)
 		graph[i][i]=0;				
-	solve(n,graph);		//i call one of the 3 algorithm it depends from the compilation	
+	solve(n,graph);		//i am calling one of the 3 algorithms it depends from the compilation	
 	for (i=0;i<n;i++){
 		free(graph[i]);				
 	}
