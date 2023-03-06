@@ -3,7 +3,7 @@
 #include "flowarmem.h"
 
 void solve(int n,int **graph){
-        int k,i,j,***p3=(int***)malloc(n*sizeof(int**));       //i create the 3-d matrix 
+        int k,i,j,***p3=(int***)malloc(n*sizeof(int**));       //i am creating the 3-d array 
         if (p3==NULL)                                           
                  return;
         for(i=0;i<n;i++){
@@ -35,7 +35,7 @@ void solve(int n,int **graph){
         free(p3);                                              
 }
 
-int p(int i,int j,int k,int **graph,int ***p3){     // i calculate the shortest path with recursive and a matrix
+int p(int i,int j,int k,int **graph,int ***p3){     // i am calculating the shortest path with recursive and a array to save the distance that i have already calculate.
         int sum,sum1,sum2,sum3,l;				
         if (k==-1){					
                 if (graph[i][j]==0)				
