@@ -19,7 +19,7 @@ int main(){
 				scanf("%d",&graph[i][j]);         //i am taking all the data from input file
 	for (i=0;i<=n-1;i++)
 		graph[i][i]=0;				
-	solve(n,graph);		//i am calling one of the 3 algorithms it depends from the compilation	
+	solve(n,graph);		//Depending on the compilation,i will call one of the 3 algorithms	
 	for (i=0;i<n;i++){
 		free(graph[i]);				
 	}
