@@ -35,7 +35,7 @@ void solve(int n,int **graph){
         free(p3);                                              
 }
 
-int p(int i,int j,int k,int **graph,int ***p3){     // i am calculating the shortest path with recursive and a array to save the distance that i have already calculate.
+int p(int i,int j,int k,int **graph,int ***p3){     // i am calculating the shortest path with recursive and i save all of the discovered distances so i dont have to rediscover them.
         int sum,sum1,sum2,sum3,l;				
         if (k==-1){					
                 if (graph[i][j]==0)				
