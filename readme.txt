@@ -1,19 +1,23 @@
-We use 3 different algorithms to find the shortest path from any point to all the others.Our input is 
-a txt file and I test my algorithms with 3 files (demo.txt,demo1.txt,demo2.txt) that contain a lower 
-triangular array and the first data is the size of the array (number of points ). 
-If the value of the data is -1 then we don’t have direct connection from the point that 
-we are and the point that we want to go so we have to find another path . 
-In all algorithms we use the same main.c and solve.h . 
-    1.    In the first algorithm I use the file flowarre.c/.h that use a recursive algorithm to 
-find the shortest path and print the distance. For the compilation write the command 
-gcc -o example main.c flowarrec.c and run it like this ./example < demo.txt or with the other demo files
-    2.    In the second algorithm I use the file flowarmem.c/.h this algorithm is the evolve of 
-the 1. algorithm because the first algorithm is too slow for big inputs . So I created a 
-algorithm with a three-dimensional array that use recursive but everytime i find a path 
-i save it in the array so when I will need it again I will not calculate it again but 
-I will take it directly from the array . gcc -o example main.c flowarmem.c and run it 
-like this ./example < demo.txt or with the other demo files
-    3.    In the third algorithm I use an iterative method to find the shortest path and i find 
-also the path that i through to reach the final point. The path is printing if i write in 
-the start of file #define PATH else the algorithm print only the best distance. 
-gcc -o example main.c flowardp.c and run it like this ./example < demo.txt or with the other demo files
+I made 3 algorithms with the purpose of finding the shortest path from one point to
+all the other ones. My input was txt file and I tested my algorithms with 3
+different files (demo.txt,demo1.txt,demo2.txt) which contain a lower triangular
+array. The first data is the size of the array (number of points). If the value of
+the data were to be -1 then I wouldn&#39;t have a direct connection from the point I’m
+currently at to the point that I want to go. Therefore, I would have to find a
+different path. In all 3 algorithms I used same main.c and solve.h.
+1. In the first algorithm, I used the file flowarre.c/.h which uses a
+recursive algorithm in order to find the shortest path and print the distance. For
+the compilation I wrote the command gcc -o example main.c flowarrec.c and run it as
+the following ./example &lt; demo.txt or with the other demo files.
+2. In the second algorithm, I used the file flowarmem.c/.h which is the
+evolution of the first algorithm, since the first one is too slow for big inputs.
+Therefore, I created an algorithm with a three-dimensional array that uses
+recursive but every time I found a path I saved it in the array. I completed this
+so whenever I would need it again, I wouldn’t have to calculate again but instead
+it would take it directly from the array. gcc -o example main.c flowarmem.c and run
+it like this ./example &lt; demo.txt or with the other demo files.
+3. In the third algorithm, I used an iterative method in order to find the
+shortest path as well as the path to reach the final point. The path was printing
+when I wrote in the start of the file #define PATH else the algorithm prints only
+the best distance. gcc -o example main.c flowardp.c and run it like this ./example
+&lt; demo.txt or with the other demo files
